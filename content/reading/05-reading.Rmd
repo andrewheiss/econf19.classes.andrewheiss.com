@@ -1,0 +1,11 @@
+---
+title: "Work, wellbeing, and scarcity II"
+date: "2019-09-25"
+citeproc: false
+bibliography: ../../static/bib/references.bib
+csl: ../../static/bib/chicago-fullnote-bibliography-no-bib.csl
+---
+
+# Required
+
+Review the readings from [last week](/reading/04-reading/) (or get a head start on [next week's readings](/reading/06-reading/)).

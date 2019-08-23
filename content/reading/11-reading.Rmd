@@ -1,0 +1,18 @@
+---
+title: "Governments and institutions"
+date: "2019-11-06"
+citeproc: false
+bibliography: ../../static/bib/references.bib
+csl: ../../static/bib/chicago-fullnote-bibliography-no-bib.csl
+---
+
+# Required
+
+- <i class="fas fa-book"></i> Introduction and 12.1-12.14 in *Economy, Society, and Public Policy* [@core-espp]
+- <i class="fas fa-book"></i> Chapters 3, 4, and 8 in *Naked Economics* [@Wheelan:2019]
+- <i class="fas fa-podcast"></i> The Uncertain Hour, ["The Peanut Butter Grandma goes to Washington,"](https://www.marketplace.org/2017/10/25/business/uncertain-hour/s02-1-peanut-butter-grandma-goes-washington) season 2, episode 1
+- <i class="fas fa-podcast"></i> The Uncertain Hour, ["The Peanut Butter Wars,"](https://www.marketplace.org/2017/11/10/business/uncertain-hour/s02-2-peanut-butter-wars) season 2, episode 2
+- <i class="fas fa-podcast"></i> The Uncertain Hour, ["The Peanut Butter Verdict,"](https://www.marketplace.org/2017/11/22/business/uncertain-hour/s02-3-peanut-butter-verdict) season 2, episode 3
+- <i class="fas fa-podcast"></i> Planet Money, ["A Former Lobbyist Tells All,"](https://www.npr.org/sections/money/2012/01/27/145923803/the-friday-podcast-a-former-lobbyist-tells-all) Episode 341, January 27, 2012
+- <i class="fab fa-youtube"></i> [LSE Research: Washington's Revolving Door](https://www.youtube.com/watch?v=2XLuaebpdAA)
+- <i class="fas fa-external-link-square-alt"></i> John Sides, ["A new experiment shows how money buys access to Congress,"](https://www.washingtonpost.com/news/monkey-cage/wp/2014/03/11/a-new-experiment-shows-how-money-buys-access-to-congress/?utm_term=.52fe30402280) The Washington Post's Monkey Cage, March 11, 2014

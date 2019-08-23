@@ -1,0 +1,13 @@
+---
+title: "Firms and markets II"
+date: "2019-10-16"
+citeproc: false
+bibliography: ../../static/bib/references.bib
+csl: ../../static/bib/chicago-fullnote-bibliography-no-bib.csl
+---
+
+# Required
+
+- <i class="fas fa-book"></i> Chapters 7 and 12 in *Naked Economics* [@Wheelan:2019]
+- <i class="fas fa-podcast"></i> Freakonomics Radio, ["Why Uber Is an Economist's Dream,"](http://freakonomics.com/podcast/uber-economists-dream/) September 7, 2016
+- <i class="fas fa-external-link-square-alt"></i> Steve Sexton, ["The Inefficiency of Local Food"](http://freakonomics.com/2011/11/14/the-inefficiency-of-local-food/), Freakonomics Blog, November 14, 2011
