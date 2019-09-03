@@ -1,6 +1,6 @@
 ---
 title: "Social interactions and economic outcomes"
-date: "2019-09-04"
+date: "2019-09-05"
 citeproc: false
 bibliography: ../../static/bib/references.bib
 csl: ../../static/bib/chicago-fullnote-bibliography-no-bib.csl

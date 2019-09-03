@@ -67,8 +67,8 @@ params:
     name: Andrew Young School of Policy Studies
     url: "https://aysps.gsu.edu/"
   description: "Understand and use economic reasoning to evaluate public policy"
-  primaryColor: "#BF616A"
-  secondaryColor: "#5E81AC"
+  primaryColor: "#5E81AC"
+  secondaryColor: "#D08770"
   credits: >-
     Hex icon by Andrew Heiss.<br>[Nord color scheme](https://github.com/arcticicestudio/nord) from [Arctic Ice Studio](http://arcticicestudio.com/).
   logo:

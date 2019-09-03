@@ -3,19 +3,20 @@ lessons:
     header: True
 
   - title: "Capitalism"
-    date: "August 28"
+    date: "August 29"
     reading: "01-reading"
+    class: "01-class"
 
   - title: "Social interactions and economic outcomes"
-    date: "September 4"
+    date: "September 5"
     reading: "02-reading"
 
   - title: '<i class="fas fa-laptop-code"></i> **Problem set 1**'
-    date: "September 7 (S)"
+    date: "September 9 (M)"
     assignment: "01-problem-set"
 
   - title: "Public policy for fairness and efficiency"
-    date: "September 11"
+    date: "September 12"
     reading: "03-reading"
 
   - title: '<i class="fas fa-laptop-code"></i> **Problem set 2**'
@@ -26,7 +27,7 @@ lessons:
     header: True
 
   - title: "Work, wellbeing, and scarcity I"
-    date: "September 18"
+    date: "September 19"
     reading: "04-reading"
 
   - title: '<i class="fas fa-laptop-code"></i> **Problem set 3**'
@@ -34,7 +35,7 @@ lessons:
     assignment: "03-problem-set"
 
   - title: "Work, wellbeing, and scarcity II"
-    date: "September 25"
+    date: "September 26"
     reading: "05-reading"
 
   - title: '<i class="fas fa-laptop-code"></i> **Problem set 4**'
@@ -42,7 +43,7 @@ lessons:
     assignment: "04-problem-set"
 
   - title: "The firm"
-    date: "October 2"
+    date: "October 3"
     reading: "06-reading"
 
   - title: '<i class="fas fa-laptop-code"></i> **Problem set 5**'
@@ -50,7 +51,7 @@ lessons:
     assignment: "05-problem-set"
 
   - title:  "Firms and markets I"
-    date: "October 9"
+    date: "October 10"
     reading: "07-reading"
 
   - title: '<i class="fas fa-laptop-code"></i> **Problem set 6**'
@@ -58,7 +59,7 @@ lessons:
     assignment: "06-problem-set"
 
   - title: "Firms and markets II"
-    date: "October 16"
+    date: "October 17"
     reading: "08-reading"
 
   - title: '<i class="fas fa-laptop-code"></i> **Problem set 7**'
@@ -72,11 +73,11 @@ lessons:
     header: True
 
   - title: "Institutions, power, and inequality"
-    date: "October 23"
+    date: "October 24"
     reading: "09-reading"
     
   - title: "Market failures"
-    date: "October 30"
+    date: "October 31"
     reading: "10-reading"
 
   - title: '<i class="fas fa-laptop-code"></i> **Problem set 8**'
@@ -84,7 +85,7 @@ lessons:
     assignment: "08-problem-set"
 
   - title: "Governments and institutions"
-    date: "November 6"
+    date: "November 7"
     reading: "11-reading"
 
   - title: '<i class="fas fa-laptop-code"></i> **Problem set 9**'
@@ -92,7 +93,7 @@ lessons:
     assignment: "09-problem-set"
 
   - title: "When governments go wrong + institutional alternatives"
-    date: "November 13"
+    date: "November 14"
     reading: "12-reading"
 
   - title: '<i class="fas fa-star"></i> **Exam 2**'
@@ -102,7 +103,7 @@ lessons:
     header: True
 
   - title: "Evaluating policies"
-    date: "November 20"
+    date: "November 21"
     reading: "13-reading"
 
   - title: '<i class="fas fa-laptop-code"></i> **Problem set 10**'
@@ -110,7 +111,7 @@ lessons:
     assignment: "10-problem-set"
 
   - title: "Markets, public policy, and public administration"
-    date: "December 4"
+    date: "December 5"
     reading: "14-reading"
 
   - title: '<span class="fake-header-table">Final</span>'

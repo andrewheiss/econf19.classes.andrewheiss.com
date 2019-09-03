@@ -1,6 +1,6 @@
 ---
 title: "Firms and markets I"
-date: "2019-10-09"
+date: "2019-10-10"
 citeproc: false
 bibliography: ../../static/bib/references.bib
 csl: ../../static/bib/chicago-fullnote-bibliography-no-bib.csl
