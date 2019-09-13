@@ -114,6 +114,12 @@
       "Source": "CRAN",
       "Hash": "2cd2a065192f3ba08a919d8800dba7e0"
     },
+    "checkmate": {
+      "Package": "checkmate",
+      "Version": "1.9.4",
+      "Source": "CRAN",
+      "Hash": "51788d50ba2a6ac3bf71efadaf1f76d9"
+    },
     "cli": {
       "Package": "cli",
       "Version": "1.1.0",
@@ -131,6 +137,12 @@
       "Version": "1.4-1",
       "Source": "CRAN",
       "Hash": "c25d49739abb6ebf4b3d0c3565574226"
+    },
+    "commonmark": {
+      "Package": "commonmark",
+      "Version": "1.7",
+      "Source": "CRAN",
+      "Hash": "af7f698e0328e0474f794452177deca6"
     },
     "crayon": {
       "Package": "crayon",
@@ -158,15 +170,15 @@
     },
     "dplyr": {
       "Package": "dplyr",
-      "Version": "0.8.1",
+      "Version": "0.8.3",
       "Source": "CRAN",
-      "Hash": "5bb882b8309b2967785c3685ab36ec4d"
+      "Hash": "17783831e1e918ab250dcae5dd9c6e03"
     },
     "ellipsis": {
       "Package": "ellipsis",
-      "Version": "0.2.0",
+      "Version": "0.2.0.1",
       "Source": "CRAN",
-      "Hash": "a945d084a8d079856ac566988b79416e"
+      "Hash": "a7a9b2ae023bf012744c480d3388c0c8"
     },
     "emo": {
       "Package": "emo",
@@ -213,9 +225,9 @@
     },
     "ggplot2": {
       "Package": "ggplot2",
-      "Version": "3.2.0",
+      "Version": "3.2.1",
       "Source": "CRAN",
-      "Hash": "e3b95a7458944efa0ebbb903bcdbe168"
+      "Hash": "635db021d29f3523c4f88e82d0c01c5e"
     },
     "glue": {
       "Package": "glue",
@@ -226,8 +238,21 @@
       "RemoteRepo": "glue",
       "RemoteUsername": "tidyverse",
       "RemoteRef": "master",
-      "RemoteSha": "7ac044aa9f839902a57d7a623ff5d7c44c7f06d9",
-      "Hash": "77b792f831a617f67bd2cb27cd00046a"
+      "RemoteSha": "71eeddfa43763880ccc6afd9021553fd728b1821",
+      "Hash": "6e2845c5f2b1399a0a080f6b2ce66ad9"
+    },
+    "gt": {
+      "Package": "gt",
+      "Version": "0.1.0",
+      "Source": "GitHub",
+      "Remotes": "rstudio/sass",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteRepo": "gt",
+      "RemoteUsername": "rstudio",
+      "RemoteRef": "master",
+      "RemoteSha": "f67bf7f2f7fc4e241f0e148377cf0340c159c137",
+      "Hash": "5df885c6f5a9f75addbeac90254a3dd8"
     },
     "gtable": {
       "Package": "gtable",
@@ -375,9 +400,9 @@
     },
     "pillar": {
       "Package": "pillar",
-      "Version": "1.4.1",
+      "Version": "1.4.2",
       "Source": "CRAN",
-      "Hash": "d72f94f538fbefc19f0c212a7117da00"
+      "Hash": "57645ff795277554eee14df5bcee8025"
     },
     "pkgconfig": {
       "Package": "pkgconfig",
@@ -405,15 +430,15 @@
     },
     "processx": {
       "Package": "processx",
-      "Version": "3.3.1.9000",
+      "Version": "3.4.1.9000",
       "Source": "GitHub",
       "RemoteType": "github",
       "RemoteHost": "api.github.com",
       "RemoteRepo": "processx",
       "RemoteUsername": "r-pkgs",
       "RemoteRef": "master",
-      "RemoteSha": "b6c18f8603fcf190cea0de98e75fbc22bfe7df06",
-      "Hash": "8c1991b0b3427d0bdcdb223f33ea184c"
+      "RemoteSha": "88437067f84bc27b3d01da05bfdf3714f33d9689",
+      "Hash": "5d540d8592044d7a70978d16dca3b416"
     },
     "progress": {
       "Package": "progress",
@@ -499,6 +524,18 @@
       "Source": "CRAN",
       "Hash": "76bb112bc3833454dc701230aa9cb3ed"
     },
+    "sass": {
+      "Package": "sass",
+      "Version": "0.1.2.1",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteRepo": "sass",
+      "RemoteUsername": "rstudio",
+      "RemoteRef": "master",
+      "RemoteSha": "4f3d4069e28f475a67d42d293bc56a5f7d807c67",
+      "Hash": "000c3ae20245da9712380153d5b853d9"
+    },
     "scales": {
       "Package": "scales",
       "Version": "1.0.0",
@@ -573,9 +610,9 @@
     },
     "vctrs": {
       "Package": "vctrs",
-      "Version": "0.1.0",
+      "Version": "0.2.0",
       "Source": "CRAN",
-      "Hash": "990e11a7c6454ee32e2821f1a34fac94"
+      "Hash": "4bdc6a6c4c5a434d880b73817d4ea641"
     },
     "viridisLite": {
       "Package": "viridisLite",
