@@ -185,7 +185,7 @@ maria_payoffs %>%
 
 1. What kind of game is this? Why? Can cooperation be ensured? How? **Answer in ≈20 words.**
 
-1. **Extra credit:** In the absence of communication, what are the two nonprofits' mixed strategies?^[See the example from [Lab 2](https://econw19.classes.andrewheiss.com/class/02-lab/) in the daytime class about how to calculate mixed strategy probability cutoffs. Also, see [this post](https://policonomics.com/mixed-strategy/) and/or [this video](https://www.youtube.com/watch?v=sww-Zsl0IRY) on solving mixed strategies.] How will they guess what the other organization will do? Under what conditions will nonprofit 1 choose to run the shelter? (i.e. what are the probability cutoffs for each nonprofit choosing to run the shelter or distribute paper towels?) **Answer in ≈40 words. Show your work.**
+1. **Extra credit:** In the absence of communication, what are the two nonprofits' mixed strategies?^[See the example from [Lab 2 at BYU](https://econw19.classes.andrewheiss.com/class/02-lab/) about how to calculate mixed strategy probability cutoffs. Also, see [this post](https://policonomics.com/mixed-strategy/) and/or [this video](https://www.youtube.com/watch?v=sww-Zsl0IRY) on solving mixed strategies.] How will they guess what the other organization will do? Under what conditions will nonprofit 1 choose to run the shelter? (i.e. what are the probability cutoffs for each nonprofit choosing to run the shelter or distribute paper towels?) **Answer in ≈40 words. Show your work.**
 
 1. **Extra credit:** What is the expected payoff of engaging in a mixed strategy? (i.e. choosing to gamble based on probability cutoffs rather than communicate and coordinate in person?) **Show your work.**
 
