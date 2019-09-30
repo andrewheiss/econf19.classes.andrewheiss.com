@@ -1,0 +1,119 @@
+---
+title: "Problem set 5"
+date: "2019-10-07"
+due_date: "2019-10-07"
+due_time: "11:59 PM"
+editor_options: 
+  chunk_output_type: console
+output:
+  blogdown::html_page:
+    css: /css/gt-overrides.css
+citeproc: false
+bibliography: ../../static/bib/references.bib
+csl: ../../static/bib/chicago-fullnote-bibliography-no-bib.csl
+---
+
+
+**Submit this as a PDF on iCollege.** You can use whatever you want to make your drawings, including [Gravit Designer](https://gravit.io/), Adobe Illustrator, Excel, PowerPoint, Microsoft Paint, or photographed/scanned pen and paper.
+
+**Cite your sources and show your work.**
+
+# 1
+
+Imagine a mild-mannered professor [^chidi] named Chidi Anagonye who is crippled with decision anxiety (he is also dead). He has to choose the best combination of pizza and frozen yogurt, but doesn't know what to do! Here's the information he has:
+
+- He has a budget of \$45 and must spend it all.
+- Slices of Hawaiian pizza cost \$3. Abbreviate this as $x$.
+- Bowls of frozen yogurt cost \$1.50. Abbreviate this as $y$.
+- The happiness Chidi gets from eating pizza and frozen yogurt can be modeled with this utility function:
+
+    $$
+    U(x, y) = x^2\ 0.25y
+    $$
+
+[^chidi]: {-} ![Chidi from The Good Place](/images/assignments/chidi-good-place.jpg)
+
+## Part 1
+
+Draw Chidi's budget line (or his personal consumption possibility frontier) and figure out the equation for this line in $y = mx + b$ form. What is the equation?
+
+## Part 2
+
+Rearrange Chidi's utility function using algebra so that it is in terms of $y$ (i.e. so that it starts with $y =$). (Mega hint: you can check your algebra with WolframAlpha by typing `solve u = x^2 * 0.25y for y`). Plot his indifference curves for 10 utils, 100 utils, and 500 utils (using Desmos or any other graphing system).
+
+What do these lines each represent?
+
+## Part 3
+
+This utility function looks a little different from ones we've seen previously in class, since $x$ and $y$ no longer have the same numbers in front of them. What does this imply about Chidi's preferences, and why? Choose A, B, C, or D and explain in **≈30 words**:
+
+a. There is a 1:1 ratio of utility. He can exchange one slice of pizza for one bowl of yogurt and maintain the same level of utility.
+b. He prefers yogurt to pizza. If the prices of both items were identical, he would consume twice as many yogurts.
+c. He prefers pizza to yogurt. If the prices of both items were identical, he would consume twice as much pizza.
+d. It is impossible to know; utility is imaginary.
+
+## Part 4
+
+The marginal rate of substitution (or slope of Chidi's indifference curve) is $\frac{2y}{x}$.^[I calculated this by going to WolframAlpha, typing `derive u = x^2\ 0.25y`, and finding the partial derivative with respect to $x$ ($8xy$) and the partial derivative with respect to $y$ ($4x^2$) and making them a ratio ($\frac{8xy}{4x^2}$). This simplifies down to $\frac{2y}{x}$.] This does not take into account the prices he faces. The marginal rate of substitution can also be written as a ratio of prices, or $\frac{\text{Price}_x}{\text{Price}_y}$.
+
+Set the slope-only MRS and the ratio of prices equal to each other and solve for $y$ (i.e. make the equation start with $y =$). This is the price-attuned marginal rate of substitution.
+
+$$
+\frac{2y}{x} = \frac{\text{Price}_\text{Pizza}}{\text{Price}_\text{Yogurt}}
+$$
+
+Finally, find where the price-attuned marginal rate of substitution matches the budget line by solving the system of equations^[Hint: your budget line will be $y = \text{something} x ± \text{something}$, and your adjusted MRS will be something like $y = \text{something else} x ± \text{something else}$. Take the $y$ of the adjusted MRS, plug it into the $y$ of the budget line, and use algebra to figure out what $x$ is ($\text{something else} x ± \text{something else} = \text{something} x ± \text{something})$. Then take that $x$, plug it in as $x$ into one of the equations, and solve for $y$.]
+
+How many slices of pizza and bowls of frozen yogurt will Chidi consume given his budget of \$45? How many utils will that level of consumption provide him with? Plot the budget line and tangential indifference curve.
+
+
+# 2
+
+In each of these situations, explain who is the principal, who is the agent, and what aspects of their interaction are of interest to each and are not covered by a complete contract. 
+
+1. A company hires a security guard to protect its premises at night.
+2. A charity wants to commission research to find out as much as possible about a new virus.
+
+For each of these siutations, predict a few possible consequences if the contract is poorly defined. Answer each in **≈100 words each**.
+
+
+# 3
+
+Most cocaine is sold illegally to recreational users. The cocaine sold on the street is not pure, but rather heavily diluted with other substances. Buyers are not able to determine the purity of the cocaine being offered for sale until they actually use it, and even then will be uncertain.
+
+1. Explain why the only cocaine available for sale on the street is diluted—users who would prefer purer cocaine (and are willing to pay a premium for it) will not be served. ***Discuss in ≈40 words***
+2. Would this situation be different if cocaine were legal? ***Discuss in ≈40 words***
+
+
+# 4
+
+The British Road Safety Act of 1967 created a mandatory penalty for drunken driving—those convicted of a DUI lost their licenses for one year. Several insurance companies began offering policies that insured against loss of license. Policyholders were guaranteed a chauffeur-driven vehicle if they were convicted of DUI.
+
+It is reasonable to predict that people who chose to buy this insurance would subsequently have a higher rate of DUI arrests than those who did not buy the insurance.
+
+1. Justify this prediction using adverse selection. What is adverse selection and how does it apply here? ***Discuss in ≈50 words***
+2. Justify this prediction using moral hazard. What is moral hazard and how does it apply here? ***Discuss in ≈50 words***
+
+
+# 5
+
+In an effort to encourage parents to read to their children, suppose that the state created "Georgia Reads," a new program that subsidizes the purchase of children's books. Under this proposal, every time a children's book is purchased from a store in Georgia, the store would charge just *half* of the retail price and would be reimbursed directly by the state for the other half. The market price for a children's book is $10 and books are a normal good.
+
+1. For a family with an income of $1,000 per month, draw budget lines before and after Georgia Reads, labeling all known curves, axes, and points.^[*Hint*: put "books" on the x-axis and "all other goods" (or "AOG") on the y-axis.]
+2. Show the income and substitution effects. Use actual numbers. Note that your numbers will differ, since everyone's indifference curves are different.
+3. What do the income and substitution effects mean in this situation?
+
+
+# 6
+
+(This question is tricky, but it's very similar to the Harvest Box example that we will talk about in class. If you find yourself completely stuck, don't worry—this is a stretch question.)
+
+Legislators are frequently frustrated by a common reaction to new policy. Lawmakers pass a new bill that provides grants to local jurisdictions for specific purposes, but most of the money never seems to be spent for what they had hoped it would. This is rarely because local officials break the law—most are careful not to violate the letter of the law.
+
+For instance, imagine that Georgia wanted to increase the amount of money local school districts spend on textbooks. Legislators enact the Textbook Act of 2019, which provides grants to local districts equal to \$14 per student (so a district with 1,000 students would get \$14,000). This new money can only be spent on textbooks. At the end of the year, state officials discover that the average amount spent on textbooks in the state only increased by \$3.
+
+1. Assuming that a school district can have preferences in their consumption of textbooks and other goods,^[Since school districts aren]t people, [my friend](https://www.youtube.com/watch?v=KlPQkd_AA6c).] graphically illustrate how this underspending might have happened using budget lines and indifference curves.
+
+    *Hint*: place "textbooks" on the x-axis, "all other goods (AOG)" on the y-axis, and use dollars as the units for both (since you don’t know the price of textbooks).
+
+2. What are the income and substitution effects of the Textbook Act of 2019?
