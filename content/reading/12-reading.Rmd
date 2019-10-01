@@ -34,4 +34,5 @@ csl: ../../static/bib/chicago-fullnote-bibliography-no-bib.csl
 
 # Not required, but highly recommended
 
+- <i class="fas fa-external-link-square-alt"></i> Adam Harris, ["The New Secession,"](https://www.theatlantic.com/education/archive/2019/05/resegregation-baton-rouge-public-schools/589381/), *The Atlantic*, May 20, 2019
 - <i class="fas fa-external-link-square-alt"></i> Destin Jenkins, ["Who Segregated America?,"](http://www.publicbooks.org/who-segregated-america/) *Public Books*, December 21, 2017
