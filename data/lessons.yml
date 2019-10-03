@@ -49,6 +49,7 @@ lessons:
   - title: "The firm"
     date: "October 3"
     reading: "06-reading"
+    class: "06-class"
 
   - title: '<i class="fas fa-laptop-code"></i> **Problem set 5**'
     date: "October 7 (M)"

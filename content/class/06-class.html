@@ -1,0 +1,128 @@
+---
+title: "The Firm"
+date: "2019-10-03"
+citeproc: false
+bibliography: ../../static/bib/references.bib
+csl: ../../static/bib/chicago-syllabus-no-bib.csl
+output:
+  blogdown::html_page:
+    template: ../../pandoc/toc-title_html.template
+    toc: true
+editor_options: 
+  chunk_output_type: console
+---
+
+<!-- BLOGDOWN-HEAD -->
+<style type="text/css">
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    background-color: #ffffff;
+    color: #a0a0a0;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #a0a0a0;  padding-left: 4px; }
+div.sourceCode
+  { color: #1f1c1b; background-color: #ffffff; }
+@media screen {
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span. { color: #1f1c1b; } /* Normal */
+code span.al { color: #bf0303; background-color: #f7e6e6; font-weight: bold; } /* Alert */
+code span.an { color: #ca60ca; } /* Annotation */
+code span.at { color: #0057ae; } /* Attribute */
+code span.bn { color: #b08000; } /* BaseN */
+code span.bu { color: #644a9b; font-weight: bold; } /* BuiltIn */
+code span.cf { color: #1f1c1b; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #924c9d; } /* Char */
+code span.cn { color: #aa5500; } /* Constant */
+code span.co { color: #898887; } /* Comment */
+code span.cv { color: #0095ff; } /* CommentVar */
+code span.do { color: #607880; } /* Documentation */
+code span.dt { color: #0057ae; } /* DataType */
+code span.dv { color: #b08000; } /* DecVal */
+code span.er { color: #bf0303; text-decoration: underline; } /* Error */
+code span.ex { color: #0095ff; font-weight: bold; } /* Extension */
+code span.fl { color: #b08000; } /* Float */
+code span.fu { color: #644a9b; } /* Function */
+code span.im { color: #ff5500; } /* Import */
+code span.in { color: #b08000; } /* Information */
+code span.kw { color: #1f1c1b; font-weight: bold; } /* Keyword */
+code span.op { color: #1f1c1b; } /* Operator */
+code span.ot { color: #006e28; } /* Other */
+code span.pp { color: #006e28; } /* Preprocessor */
+code span.re { color: #0057ae; background-color: #e0e9f8; } /* RegionMarker */
+code span.sc { color: #3daee9; } /* SpecialChar */
+code span.ss { color: #ff5500; } /* SpecialString */
+code span.st { color: #bf0303; } /* String */
+code span.va { color: #0057ae; } /* Variable */
+code span.vs { color: #bf0303; } /* VerbatimString */
+code span.wa { color: #bf0303; } /* Warning */
+</style>
+<!-- /BLOGDOWN-HEAD -->
+
+<h2>Contents</h2>
+<div id="TOC">
+<ul>
+<li><a href="#slides">Slides</a></li>
+<li><a href="#calculating-gini-coefficients">Calculating Gini coefficients</a></li>
+<li><a href="#clearest-and-muddiest-things">Clearest and muddiest things</a></li>
+</ul>
+</div>
+
+<h2 id="slides">Slides</h2>
+<p>The slides from today will go here.</p>
+<h2 id="calculating-gini-coefficients">Calculating Gini coefficients</h2>
+<p>You can see <a href="https://en.wikipedia.org/wiki/List_of_countries_by_income_equality">global inequality statistics at Wikipedia</a>. There are several columns here—the World Bank and CIA both calculate Gini coefficients (multiplied by 100 to be on a 0–100 scale), and the R/P columns are the 90/10 ratios you calculated in Problem Set 1 (income held by top 10% compared to income held by bottom 10%).</p>
+<p>Here’s an example of how to calculate Gini coefficients in Excel:</p>
+<ul>
+<li><a href="/files/gini_filled.xlsx"><i class="fas fa-file-excel"></i> <code>gini_filled.xlsx</code></a></li>
+</ul>
+<p>Instead of using calculus to find the area under Lorenz curve, we used this formula where <span class="math inline">\(x\)</span> = income, <span class="math inline">\(y\)</span> = cumulative proportion of the population, and <span class="math inline">\(\mu_x\)</span> = mean of income:</p>
+<p><span class="math display">\[
+\text{Gini} = \frac{2}{\mu_x} \text{Cov}(x, y)
+\]</span></p>
+<p>You can also do this in R with the <strong>ineq</strong> package:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="kw">library</span>(ineq)</span>
+<span id="cb1-2"><a href="#cb1-2"></a></span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="co"># List of incomes</span></span>
+<span id="cb1-4"><a href="#cb1-4"></a>incomes &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">10000</span>, <span class="dv">20000</span>, <span class="dv">50000</span>, <span class="dv">100000</span>, <span class="dv">200000</span>)</span>
+<span id="cb1-5"><a href="#cb1-5"></a></span>
+<span id="cb1-6"><a href="#cb1-6"></a><span class="co"># Calculate Gini coefficient</span></span>
+<span id="cb1-7"><a href="#cb1-7"></a>gini_coef &lt;-<span class="st"> </span><span class="kw">Gini</span>(incomes)</span>
+<span id="cb1-8"><a href="#cb1-8"></a>gini_coef</span></code></pre></div>
+<pre><code>## [1] 0.4842105</code></pre>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="co"># Plot Lorenz curve</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a><span class="kw">plot</span>(<span class="kw">Lc</span>(incomes), <span class="dt">xlab =</span> <span class="st">&quot;Proportion of population&quot;</span>, <span class="dt">ylab =</span> <span class="st">&quot;Proportion of income&quot;</span>)</span>
+<span id="cb3-3"><a href="#cb3-3"></a><span class="kw">text</span>(<span class="dt">x =</span> <span class="fl">0.2</span>, <span class="dt">y =</span> <span class="fl">0.8</span>, <span class="dt">labels =</span> <span class="kw">paste</span>(<span class="st">&quot;Gini:&quot;</span>, <span class="kw">round</span>(gini_coef, <span class="dv">3</span>)))</span></code></pre></div>
+<p><img src="/class/06-class_files/figure-html/gini-example-1.png" width="672" /></p>
+<h2 id="clearest-and-muddiest-things">Clearest and muddiest things</h2>
+<p>Go to <a href="https://forms.gle/rwiMXtySjxgnqRDD9">this form</a> and answer these three questions:</p>
+<ol style="list-style-type: decimal">
+<li>What was the muddiest thing from class today? What are you still wondering about?</li>
+<li>What was the clearest thing from class today?</li>
+<li>What was the most exciting thing you learned?</li>
+</ol>
+<p>I’ll compile the questions and send out answers after class.</p>
