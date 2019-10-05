@@ -14,9 +14,9 @@ editor_options:
 
 <!-- BLOGDOWN-HEAD -->
 <style type="text/css">
-code.sourceCode > span { display: inline-block; line-height: 1.25; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-code.sourceCode > span:empty { height: 1.2em; }
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode { white-space: pre; position: relative; }
 div.sourceCode { margin: 1em 0; }
@@ -26,16 +26,14 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 code.sourceCode { white-space: pre-wrap; }
-code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
 }
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
     position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
+    border: none; pointer-events: all; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
@@ -47,7 +45,7 @@ pre.numberSource { margin-left: 3em; border-left: 1px solid #a0a0a0;  padding-le
 div.sourceCode
   { color: #1f1c1b; background-color: #ffffff; }
 @media screen {
-code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+a.sourceLine::before { text-decoration: underline; }
 }
 code span. { color: #1f1c1b; } /* Normal */
 code span.al { color: #bf0303; background-color: #f7e6e6; font-weight: bold; } /* Alert */
@@ -93,7 +91,10 @@ code span.wa { color: #bf0303; } /* Warning */
 </div>
 
 <h2 id="slides">Slides</h2>
-<p>The slides from today will go here.</p>
+<p><a href="/slides/PMAP-8141_2019-10-03.pdf">Download the slides from today’s class</a>.</p>
+<figure>
+<a href="/slides/PMAP-8141_2019-10-03.pdf"><img src="/images/slides/slides_2019-10-03.png" alt="First slide" /></a>
+</figure>
 <h2 id="calculating-gini-coefficients">Calculating Gini coefficients</h2>
 <p>You can see <a href="https://en.wikipedia.org/wiki/List_of_countries_by_income_equality">global inequality statistics at Wikipedia</a>. There are several columns here—the World Bank and CIA both calculate Gini coefficients (multiplied by 100 to be on a 0–100 scale), and the R/P columns are the 90/10 ratios you calculated in Problem Set 1 (income held by top 10% compared to income held by bottom 10%).</p>
 <p>Here’s an example of how to calculate Gini coefficients in Excel:</p>
@@ -105,18 +106,18 @@ code span.wa { color: #bf0303; } /* Warning */
 \text{Gini} = \frac{2}{\mu_x} \text{Cov}(x, y)
 \]</span></p>
 <p>You can also do this in R with the <strong>ineq</strong> package:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="kw">library</span>(ineq)</span>
-<span id="cb1-2"><a href="#cb1-2"></a></span>
-<span id="cb1-3"><a href="#cb1-3"></a><span class="co"># List of incomes</span></span>
-<span id="cb1-4"><a href="#cb1-4"></a>incomes &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">10000</span>, <span class="dv">20000</span>, <span class="dv">50000</span>, <span class="dv">100000</span>, <span class="dv">200000</span>)</span>
-<span id="cb1-5"><a href="#cb1-5"></a></span>
-<span id="cb1-6"><a href="#cb1-6"></a><span class="co"># Calculate Gini coefficient</span></span>
-<span id="cb1-7"><a href="#cb1-7"></a>gini_coef &lt;-<span class="st"> </span><span class="kw">Gini</span>(incomes)</span>
-<span id="cb1-8"><a href="#cb1-8"></a>gini_coef</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">library</span>(ineq)</a>
+<a class="sourceLine" id="cb1-2" title="2"></a>
+<a class="sourceLine" id="cb1-3" title="3"><span class="co"># List of incomes</span></a>
+<a class="sourceLine" id="cb1-4" title="4">incomes &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">10000</span>, <span class="dv">20000</span>, <span class="dv">50000</span>, <span class="dv">100000</span>, <span class="dv">200000</span>)</a>
+<a class="sourceLine" id="cb1-5" title="5"></a>
+<a class="sourceLine" id="cb1-6" title="6"><span class="co"># Calculate Gini coefficient</span></a>
+<a class="sourceLine" id="cb1-7" title="7">gini_coef &lt;-<span class="st"> </span><span class="kw">Gini</span>(incomes)</a>
+<a class="sourceLine" id="cb1-8" title="8">gini_coef</a></code></pre></div>
 <pre><code>## [1] 0.4842105</code></pre>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="co"># Plot Lorenz curve</span></span>
-<span id="cb3-2"><a href="#cb3-2"></a><span class="kw">plot</span>(<span class="kw">Lc</span>(incomes), <span class="dt">xlab =</span> <span class="st">&quot;Proportion of population&quot;</span>, <span class="dt">ylab =</span> <span class="st">&quot;Proportion of income&quot;</span>)</span>
-<span id="cb3-3"><a href="#cb3-3"></a><span class="kw">text</span>(<span class="dt">x =</span> <span class="fl">0.2</span>, <span class="dt">y =</span> <span class="fl">0.8</span>, <span class="dt">labels =</span> <span class="kw">paste</span>(<span class="st">&quot;Gini:&quot;</span>, <span class="kw">round</span>(gini_coef, <span class="dv">3</span>)))</span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" title="1"><span class="co"># Plot Lorenz curve</span></a>
+<a class="sourceLine" id="cb3-2" title="2"><span class="kw">plot</span>(<span class="kw">Lc</span>(incomes), <span class="dt">xlab =</span> <span class="st">&quot;Proportion of population&quot;</span>, <span class="dt">ylab =</span> <span class="st">&quot;Proportion of income&quot;</span>)</a>
+<a class="sourceLine" id="cb3-3" title="3"><span class="kw">text</span>(<span class="dt">x =</span> <span class="fl">0.2</span>, <span class="dt">y =</span> <span class="fl">0.8</span>, <span class="dt">labels =</span> <span class="kw">paste</span>(<span class="st">&quot;Gini:&quot;</span>, <span class="kw">round</span>(gini_coef, <span class="dv">3</span>)))</a></code></pre></div>
 <p><img src="/class/06-class_files/figure-html/gini-example-1.png" width="672" /></p>
 <h2 id="clearest-and-muddiest-things">Clearest and muddiest things</h2>
 <p>Go to <a href="https://forms.gle/rwiMXtySjxgnqRDD9">this form</a> and answer these three questions:</p>
