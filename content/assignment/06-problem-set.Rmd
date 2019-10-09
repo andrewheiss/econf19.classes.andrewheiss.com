@@ -1,0 +1,176 @@
+---
+title: "Problem set 6"
+date: "2019-10-14"
+due_date: "2019-10-14"
+due_time: "11:59 PM"
+editor_options: 
+  chunk_output_type: console
+output:
+  blogdown::html_page:
+    css: /css/gt-overrides.css
+citeproc: false
+bibliography: ../../static/bib/references.bib
+csl: ../../static/bib/chicago-fullnote-bibliography-no-bib.csl
+---
+
+
+**Submit this as a PDF on iCollege.** You can use whatever you want to make your drawings, including [Gravit Designer](https://gravit.io/), Adobe Illustrator, Excel, PowerPoint, Microsoft Paint, or photographed/scanned pen and paper.
+
+**Cite your sources and show your work.**
+
+```{r load-libraries, echo=FALSE, warning=FALSE, message=FALSE}
+library(tidyverse)
+library(pander)
+library(ineq)
+library(scales)
+library(here)
+
+source(here("lib", "graphics.R"))
+```
+
+
+# 1
+
+*(This is similar to the Harvest Box/WIC example we talked about in class)*
+
+Suppose residents of a rural community in a developing nation spend all of their income on two goods: clothing and food. The price of clothing is 10 dinar per package and the price of food is 5 dinar per kilogram.
+
+Consider a family with income of 200 dinar per week. In the absence of any government program, the family would consume 30 kg of food. 
+
+1. Draw the family's budget line, labeling all axes and all points whose value you know. Mark the family's equilibrium consuption point as $A$. 
+2. On the same graph, draw a new budget line for a program that provides each family with 5 free packages of clothing. 
+3. In a new graph, draw the family's original budget line. Show the effect of an increase in the price of clothing to 20 dinar per package, assuming that clothing is a normal good. Show the income and substitution effects. Use actual numbers. (There are no correct numbers, though.)
+4. What do the income and substitution effects mean in this situation?
+
+
+# 2
+
+The distribution of incomes in Pawnee, Eagleton, and The Good Place follows the Lorenz curves plotted below, with the following Gini coefficients:
+
+```{r gini-table, echo=FALSE, results="asis"}
+set.seed(1234)
+schuriverse_incomes <- tibble(Pawnee = rpois(1000, lambda = 5) * 10000,
+                              Eagleton = as.integer(rchisq(1000, df = 1) * 10000),
+                              `The Good Place` = rnorm(1000, mean = 50000, sd = 10000)) %>% 
+  gather(city, income) %>%
+  nest(data = income) %>%
+  mutate(gini = data %>% map_dbl(~ Gini(.$income)))
+
+schuriverse_incomes %>%
+  select(City = city, -data, `Gini` = gini) %>%
+  pandoc.table(justify = "ll")
+```
+
+```{r lorenz-curve, echo=FALSE, fig.width=6, fig.height=6}
+get_lorenz <- function(x) {
+  lorenz_raw <- Lc(x)
+  tibble(prop_population = lorenz_raw$p,
+         prop_income = lorenz_raw$L)
+}
+
+schuriverse_ineq <- schuriverse_incomes %>%
+  mutate(lorenz = data %>% map(~ get_lorenz(.$income))) %>%
+  unnest(lorenz)
+
+ggplot() +
+  geom_line(data = schuriverse_ineq, aes(x = prop_population, y = prop_income, color = city),
+            size = 2) +
+  geom_abline(slope = 1, intercept = 0, size = 0.25, color = "grey50") +
+  labs(x = "Cumulative % of population", y = "Cumulative % of income") +
+  scale_x_continuous(labels = percent, breaks = seq(0, 1, 0.2)) +
+  scale_y_continuous(labels = percent, breaks = seq(0, 1, 0.2)) +
+  scale_color_manual(values = c(nord_green, nord_orange, nord_purple)) +
+  theme_econ(13) +
+  guides(color = guide_legend(title = NULL)) +
+  theme(panel.grid = element_blank(),
+        legend.position = "bottom")
+```
+
+Which city has the most equally distributed income? Which has the least? How do you know? What are the possible implications of the income distributions in each of the cities? ***Discuss in ≈60 words***
+
+
+# 3
+
+Think of two public or nonprofit sector jobs. In each case, describe why the employment contract is necessarily incomplete. What important parts of the person's job—things that the employer would like to see the employee do or not do—cannot be covered in a contract, or if they are, cannot be enforced? ***Discuss in ≈75 words***.
+
+
+# 4
+
+Consider the following income distribution in a 10-person society:
+
+```{r income-village-numbers, echo=FALSE, results="asis"}
+incomes <- tibble(Person = 1:10,
+                  Income = c(10000, 12000, 15000, 30000, 50000, 
+                             70000, 100000, 110000, 120000, 800000))
+incomes %>%
+  mutate(Income = dollar(Income)) %>%
+  pandoc.table(justify = "cc")
+```
+
+&nbsp;
+
+**Draw** the Lorenz curve for the society and **calculate** the Gini coefficient. What does this number mean?^[The [Excel file from class 6](class/06-class/#calculating-gini-coefficients) will be helpful here.]
+
+
+# 5
+
+*True or false*: The substitution effect of a price change always goes in the opposite direction from the income effect. ***Explain with a graph and discuss in ≈30 words***.
+
+
+# 6
+
+Consider an individual's indifference curves for the consumption of two goods (things you would like to have more of). In this case, which of the following statements are true (*only one is true*)? **Explain why each option is true or false in ≈20 words.**^[The [Marginal Revolution videos on indifference curves](/class/05-class/#marginal-revolution-university-videos) will be super helpful here.]
+
+a. The indifference curves are downward-sloping.
+b. The indifference curves can sometimes cross.
+c. The indifference curves cannot have sections that are straight lines.
+d. The indifference curves cannot have kinks.
+
+
+# 7
+
+Leslie Knope, deputy director of the parks department, once mused "Why would anybody ever eat anything besides breakfast food?" Consistent with this belief, she consumes waffles whenever possible.
+
+Here are 5 different sets of budget lines and indifference curves. In each, *point A* shows original consumption, *point B* shows new consumption after a change in budget, and *point C* shows the in-between level of hypothetical consumption. *The red line shows the original budget line; the blue line shows the budget line after a change in prices.*
+
+<figure class="fullwidth">
+
+![](/images/assignments/indifference-curves-waffles.png)
+
+</figure>
+
+For each of these questions, select the appropriate answer(s) and explain why in ***≈20 words.***
+
+1. Of these graphs, which one(s) show an increase in the price of waffles? (*multiple answers allowed, but multiple answers aren't necessarily correct*)
+
+    a. I
+    b. II
+    c. III
+    d. IV
+    e. V
+
+2. Of these graphs, which one(s) show an increase in income? (*multiple answers allowed, but multiple answers aren't necessarily correct*)
+
+    a. I
+    b. II
+    c. III
+    d. IV
+    e. V
+    
+
+38. Which of these graphs show waffles as a normal good? (*multiple answers allowed, but multiple answers aren't necessarily correct*)
+
+    a. I
+    b. II
+    c. III
+    d. IV
+    e. V
+    
+
+39. Which of these graphs show waffles as an inferior good? (*multiple answers allowed, but multiple answers aren't necessarily correct*)
+
+    a. I
+    b. II
+    c. III
+    d. IV
+    e. V
