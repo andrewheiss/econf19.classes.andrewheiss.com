@@ -1,0 +1,175 @@
+---
+title: "Firms and markets II"
+date: "2019-10-17"
+citeproc: false
+bibliography: ../../static/bib/references.bib
+csl: ../../static/bib/chicago-syllabus-no-bib.csl
+output:
+  blogdown::html_page:
+    template: ../../pandoc/toc-title_html.template
+    toc: true
+editor_options: 
+  chunk_output_type: console
+---
+
+# Slides
+
+[Download the slides from today's class](/slides/PMAP-8141_2019-10-17.pdf).
+
+<figure>
+[![First slide](/images/slides/slides_2019-10-17.png)](/slides/PMAP-8141_2019-10-17.pdf)
+</figure>
+
+
+# Supply, demand, surplus, deadweight loss, and taxes
+
+```{r echo=FALSE, warning=FALSE, message=FALSE}
+library(tidyverse)
+library(here)
+library(patchwork)
+source(here("lib", "graphics.R"))
+source(here("lib", "supply-demand-surplus.R"))
+```
+
+In class, we looked at these different supply and demand graphs and calculated the areas of the different rectangles and triangles. Here are the answers for all five (the first general one, followed by the four with varied elasticity):
+
+## Supply and demand with regular elasticity
+
+This is the first example we did together in class. Both supply and demand here have normal slopes (i.e. not super steep and not super flat), so their elasticity is fairly average. Here are the equations:
+
+$$
+\begin{aligned}
+\text{S} &: P = 2 + 0.25Q \\
+\text{D} &: P = 20 - 0.5Q \\
+\text{S}_\text{tax} &: P = 2 + 0.25Q + 5
+\end{aligned}
+$$
+
+<figure class="fullwidth">
+
+```{r echo=FALSE, fig.width=12, fig.height=5}
+normal_taxes <- tax_graph(demand, supply, supply_tax, NULL)
+normal_taxes_shaded <- tax_graph(demand, supply, supply_tax, NULL, shaded = TRUE)
+normal_taxes$plot + normal_taxes_shaded$plot
+```
+
+</figure>
+
+```{r echo=FALSE, results="asis"}
+normal_taxes$details
+```
+
+## Elastic demand
+
+Here, demand is highly elastic—as the price changes, people change their consumption of the good quickly (i.e. increasing the price makes people jump away from it). Because of this, the burden of the tax falls on the producers, who can't escape the tax. The tax also causes a lot of DWL because of the high elasticity.
+
+$$
+\begin{aligned}
+\text{S} &: P = 2 + 0.25Q \\
+\text{D} &: P = 10 - 0.05Q \\
+\text{S}_\text{tax} &: P = 2 + 0.25Q + 5
+\end{aligned}
+$$
+
+<figure class="fullwidth">
+
+```{r echo=FALSE, fig.width=12, fig.height=5}
+elastic_demand <- tax_graph(demand_elastic, supply, supply_tax, "1: Elastic demand")
+elastic_demand_shaded <- tax_graph(demand_elastic, supply, supply_tax, NULL, shaded = TRUE)
+elastic_demand$plot + elastic_demand_shaded$plot
+```
+
+</figure>
+
+```{r echo=FALSE, results="asis"}
+elastic_demand$details
+```
+
+## Inelastic demand
+
+Here, demand is highly inelastic—as the price changes, the quantity doesn't change a lot (i.e. increasing the price makes only a few people jump away, and the people who keep buying it have to suck up the higher price). Because of this, the burden of the tax falls on the consumers, who can't escape the tax. The tax also causes smaller DWL because of the low elasticity.
+
+$$
+\begin{aligned}
+\text{S} &: P = 2 + 0.25Q \\
+\text{D} &: P = 20 - 2Q \\
+\text{S}_\text{tax} &: P = 2 + 0.25Q + 5
+\end{aligned}
+$$
+
+<figure class="fullwidth">
+
+```{r echo=FALSE, fig.width=12, fig.height=5}
+inelastic_demand <- tax_graph(demand_inelastic, supply, supply_tax, "2: Inelastic demand")
+inelastic_demand_shaded <- tax_graph(demand_inelastic, supply, supply_tax, NULL, shaded = TRUE)
+inelastic_demand$plot + inelastic_demand_shaded$plot
+```
+
+</figure>
+
+```{r echo=FALSE, results="asis"}
+inelastic_demand$details
+```
+
+## Elastic supply
+
+Here, supply is highly elastic—as the price changes, the quantity produced changes a lot (i.e. increasing a tax on books would make Amazon redirect its efforts to music, video, or web servers and wouldn't hurt the company that much). Because of this, the burden of the tax falls on the consumers, since the company escapes the tax easily. The tax also causes a lot of DWL because of the high elasticity.
+
+$$
+\begin{aligned}
+\text{S} &: P = 2 + 0.05Q \\
+\text{D} &: P = 20 - 0.5Q \\
+\text{S}_\text{tax} &: P = 2 + 0.05Q + 5
+\end{aligned}
+$$
+
+<figure class="fullwidth">
+
+```{r echo=FALSE, fig.width=12, fig.height=5}
+elastic_supply <- tax_graph(demand, supply_elastic, supply_elastic_tax, "3: Elastic supply")
+elastic_supply_tax <- tax_graph(demand, supply_elastic, supply_elastic_tax, NULL, shaded = TRUE)
+elastic_supply$plot + elastic_supply_tax$plot
+```
+
+</figure>
+
+```{r echo=FALSE, results="asis"}
+elastic_supply$details
+```
+
+## Inelastic supply
+
+Here, supply is highly inelastic—as the price changes, the quantity produced changes a little (i.e. increasing a tax on books would put strain on a small family-owned bookstore that only sold books, since they'd have no other alternative things to produce). Because of this, the burden of the tax falls on the producers, since the company can't escape the tax by doing other things.
+
+$$
+\begin{aligned}
+\text{S} &: P = 2 + 1.5Q \\
+\text{D} &: P = 20 - 0.5Q \\
+\text{S}_\text{tax} &: P = 2 + 1.5Q + 5
+\end{aligned}
+$$
+
+<figure class="fullwidth">
+
+```{r echo=FALSE, fig.width=12, fig.height=5}
+inelastic_supply <- tax_graph(demand, supply_inelastic, supply_inelastic_tax, "4: Inelastic supply")
+inelastic_supply_tax <- tax_graph(demand, supply_inelastic, supply_inelastic_tax, NULL, shaded = TRUE)
+inelastic_supply$plot + inelastic_supply_tax$plot
+```
+
+</figure>
+
+```{r echo=FALSE, results="asis"}
+inelastic_supply$details
+```
+
+
+# Clearest and muddiest things
+
+Go to [this form](https://forms.gle/rwiMXtySjxgnqRDD9) and answer these three questions:
+
+1. What was the muddiest thing from class today? What are you still wondering about?
+2. What was the clearest thing from class today? 
+3. What was the most exciting thing you learned?
+
+I'll compile the questions and send out answers after class.

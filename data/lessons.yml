@@ -67,6 +67,7 @@ lessons:
   - title: "Firms and markets II"
     date: "October 17"
     reading: "08-reading"
+    class: "08-class"
 
   - title: '<i class="fas fa-laptop-code"></i> **Problem set 7**'
     date: "October 19 (S)"
