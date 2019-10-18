@@ -332,7 +332,7 @@ source(here("lib", "graphics.R"))
     ```{r supply-demand-surplus, echo=FALSE, warning=FALSE, message=FALSE, fig.width=5, fig.height=5}
     source(here("lib", "supply-demand-surplus.R"))
     
-    tax_graph(demand, supply, supply_tax, NULL, TRUE)
+    tax_graph(demand, supply, supply_tax, NULL, TRUE)$plot
     ```
 
 **Helpful resources:**
