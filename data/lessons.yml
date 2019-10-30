@@ -88,21 +88,21 @@ lessons:
     date: "October 31"
     reading: "10-reading"
 
-  - title: '<i class="fas fa-laptop-code"></i> **Problem set 8**'
-    date: "November 2 (S)"
-    assignment: "08-problem-set"
-
   - title: "Governments and institutions"
     date: "November 7"
     reading: "11-reading"
 
-  - title: '<i class="fas fa-laptop-code"></i> **Problem set 9**'
+  - title: '<i class="fas fa-laptop-code"></i> **Problem set 8**'
     date: "November 9 (S)"
-    assignment: "09-problem-set"
+    assignment: "08-problem-set"
 
   - title: "When governments go wrong + institutional alternatives"
     date: "November 14"
     reading: "12-reading"
+
+  - title: '<i class="fas fa-laptop-code"></i> **Problem set 9**'
+    date: "November 16 (S)"
+    assignment: "09-problem-set"
 
   - title: '<i class="fas fa-star"></i> **Exam 2**'
     date: "November 17–23"
