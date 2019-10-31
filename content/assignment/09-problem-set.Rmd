@@ -1,0 +1,131 @@
+---
+title: "Problem set 9"
+date: "2019-11-14"
+due_date: "2019-11-14"
+due_time: "11:59 PM"
+editor_options: 
+  chunk_output_type: console
+output:
+  blogdown::html_page:
+    css: /css/gt-overrides.css
+citeproc: false
+bibliography: ../../static/bib/references.bib
+csl: ../../static/bib/chicago-fullnote-bibliography-no-bib.csl
+---
+
+
+**Submit this as a PDF on iCollege.** You can use whatever you want to make your drawings, including [Gravit Designer](https://gravit.io/), Adobe Illustrator, Excel, PowerPoint, Microsoft Paint, or photographed/scanned pen and paper.
+
+**Cite your sources and show your work.**
+
+
+# 1
+
+The nation of Oskago is a rocky island whose inhabitants are particularly hardworking and adept fishermen. They are able to catch eight tons of fish per year, yet they can gather only four tons of coconuts per year. The going price for one coconut on the island is two fish. Nearby is the island paradise of Silveto whose lazy inhabitants catch only four tons of fish per year but gather eight tons of coconuts every year from the lush forests. On Silveto, the price of one fish is two coconuts. With the advent of lightweight boats, the possibility of virtually cost-free trade now exists. 
+
+Should the two island nations trade products? **Why or why not? Graph your results.**
+
+
+# 2
+
+James Madison, a leading figure in the debates about the US Constitution after the formerly British colonies in the United States of America won the war of independence, wrote in 1788:
+
+> In framing a government which is to be administered by men over men, the great difficulty lies in this: you must first enable the government to control the governed; and in the next place oblige it to control itself.
+
+How does democracy (including the rule of law) address Madison’s concerns to oblige the government to "control itself"? (**≈100 words**)
+
+
+# 3
+
+Marcel Fafchamps and Bart Minten, two economists, studied grain markets in Madagascar in 1997, where the legal institutions for enforcing property rights and contracts were weak.^[@FafchampsMinten:1999] Despite this, they found that theft and breach of contract were rare. The grain traders avoided theft by keeping their stocks very low, and if necessary, sleeping in the grain stores. They refrained from employing additional workers for fear of employee-related theft. When transporting their goods, they paid protection money and travelled in convoy. Most transactions were paid in cash. Trust was established through repeated interaction with the same traders.
+
+1. Recall Elinor Ostrom's work on the fishermen in Alanya, Turkey.^[@Ostrom:1990] Do the findings from Fafchamps and Minten (and Ostrom) suggest that strong legal institutions are not necessary for markets to work? How so? (**≈50 words**)
+
+2. Consider some market transactions in which you have been involved. Could these markets work in the absence of a legal framework, and how would they be different if they did? (**≈40 words**)
+
+3. Can you think of any examples in which repeated interaction helps to facilitate market transactions? (**≈40 words**)
+
+4. Why might repeated interaction be important even when a legal framework is present? (**≈30 words**)
+
+5. What role can informal institutions play in these kind of interactions? (**≈30 words**)
+
+
+# 4
+
+Discuss whether the following statements are true or false and explain why in **≈35 words each**: 
+
+1. If I'm worse at everything than my neighbor, my neighbor will have no reason to trade with me. 
+2. The Coase Theorem states that every type of externality can be solved by private negotiation.
+3. Free riding becomes more of a problem as more people benefit from a public good.
+4. When a good imposes a negative externality on society, the government should completely ban the production and exchange of that good.
+5. Because their life is on the line, car drivers will exert a socially efficient level of care while driving.
+
+
+# 5
+
+Suppose the demand for Coca Cola products in Atlanta is
+
+$$
+Q = 10,000 - 10,000P
+$$
+
+where Q is the number of cans of soft drink purchased per day and P is the price per can. The market supply curve is horizontal at \$0.75 per can.^[*Hint*: Remember that in supply/demand graphs, Q is on the x-axis and P is on the y-axis. You might need to do some algebra.] Given existing habits and disposal and recyling technology, it has been estimated that the average soft drink can ends up costing 10 cents in the form of unsightly litter and pick-up costs. 
+
+1. Explain how the concept of market failure applies to this example (**≈20 words**). Illustrate your explanation with a graph showing the extent of this failure.^[*Hint*: think about social vs. private marginal costs] Be as precise as you can be in describing the extent of the failure.
+2. Can society's loss from this market failure be quantified (**≈10 words**)? If so, calculate it as precisely as possible and indicate it in your illustration.
+3. How could taxation be used to overcome this market failure? (**≈25 words**)
+4. What are the shortcomings of this solution? (**≈25 words**)
+5. What alternative policies might be worth considering? (**≈30 words**)
+
+
+# 6
+
+Mount Everest is crowded during climbing season. Every year more groups seek to summit the world’s highest mountain. The crowding increases the danger for all and diminishes the experience. The government of Nepal decides that it has issued too many climbing permits in the past, and is considering several schemes for reducing by half the number of permits (or climbers). Here are the three schemes it is considering:
+
+- A. Issue non-transferable permits to the firms that organize Everest expeditions equal (in each case) to half the number of climbers that were their customers last year
+- B. Same as A, but allow the firms to transfer (sell) the permits they are allocated by the government to other firms
+- C. Auction off the same total number of permits in A and B to the highest bidders
+
+Answer these questions:
+
+1. Without any regulation, why would we expect too many climbers on the mountain? What kind of market failure is this? (**≈20 words**)
+
+2. For each of the schemes, describe (1) what you expect the consequences would be on overcrowding, and (2) what the efficiency and distributional consequences might be (i.e. discuss Pareto efficiency and fairness, thinking about procedural, substantive, and Rawlsian fairness). (**≈60 words**)
+
+3. In what sense is B a better scheme than A? (**≈20 words**)
+
+4. Compare B and C. What difference would there be in the price of a permit? What difference would there be in the final distribution of permits among professional guides? (**≈30 words**)
+
+5. Propose two policy alternatives the Nepalese government could use instead of these permit schemes. Under what conditions would they work better or worse? (**≈60 words**)
+
+
+# 7
+
+In two-car automobile accidents, [passengers in the larger vehicle are significantly more likely to survive than passengers in the smaller vehicle](http://www.buffalo.edu/news/releases/2013/05/026.html). Some politicians and lobbyists have argued that this provides a rationale for encouraging the sale of larger vehicles and discouraging legislation that would induce automobile manufacturers to make smaller cars. Evaluate this argument using the concept of externalities. Are these politicians and lobbyists right? **Answer in ≈40 words.**
+
+
+# 8
+
+Fulton County is deciding between different policies to fund schools. Because schools are funded through property taxes, higher levels of school funding entail higher tax rates for all residents of the county. 
+
+There are three possible policies the Board of Commissioners has been considering:
+
+- **Policy H**: High levels of funding (and high taxes)
+- **Policy M**: Medium levels of funding (and medium taxes)
+- **Policy L**: Low levels of funding (and low taxes)
+
+Assume that there are three equally-sized groups of county residents:
+
+- **Parents interested in public education** whose main concern is that their children receive the highest quality of education. This group's first choice is H, followed by M, followed by L. 
+- **Parents interested in private education**  whose main concern is that property taxes are as low as possible so they can afford to send their kids to private schools. If this isn't possible, their second option is to have high tax rates so that their children will have high quality education in the public system. This group's first choice is L, followed by H, followed by M. 
+- **Young couples without children** who do not want to pay for high taxes right now, but are eventually interested in having high quality education several years from now. This group's first choice is M, followed by L, followed by H.
+
+Answer these questions:
+
+1. Which of the three policies is preferred by the majority of the county? Can you rank which policy is the most preferred, medium preferred, and least preferred for all county residents?  (**≈20 words**)
+
+2. If these policies were paired up, would voter preferences be transitive or intransitive? What does that mean? (**≈20 words**)
+
+3. The Board of Commissioners will offer voters a choice between *two* of these policies in the next November election. You are responsible for choosing which two policies go on the ballot. Can you ensure that *your* most preferred policy wins? How? (**≈30 words**)
+
+4. The county charter requires that all three options receive a vote, but you can present these votes in pairs (i.e. present voters with a choice between two options and then present voters with a choice between the winner of that contest and the third option). Can you ensure that *your* most preferred policy wins? How? (**≈30 words**)
