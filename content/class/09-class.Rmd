@@ -50,7 +50,7 @@ results_summary <- results %>%
   arrange(desc(pct_world))
 ```
 
-Two countries merged and outperformed all other countries (even if they split their earnings 50/50 at the end, both countries still would have won).
+Country C1 (the poorest at the beginning) ended up outperforming all other groups due to their institutional arrangments and deals with other countries.
 
 ```{r plot-results, echo=FALSE, fig.height=3.5}
 ggplot(results, aes(x = total, y = team)) +
