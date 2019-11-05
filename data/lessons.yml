@@ -123,6 +123,10 @@ lessons:
     date: "December 5"
     reading: "14-reading"
 
+  - title: "Book report (extra credit)"
+    date: "December 12"
+    assignment: "book-report"
+
   - title: '<span class="fake-header-table">Final</span>'
     header: True
 

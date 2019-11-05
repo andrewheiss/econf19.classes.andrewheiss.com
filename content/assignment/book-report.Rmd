@@ -1,0 +1,36 @@
+---
+title: "Book report"
+date: "2019-12-07"
+due_date: "2019-12-07"
+due_time: "11:59 PM"
+editor_options: 
+  chunk_output_type: console
+output:
+  blogdown::html_page:
+    css: /css/gt-overrides.css
+citeproc: false
+bibliography: ../../static/bib/references.bib
+csl: ../../static/bib/chicago-fullnote-bibliography-no-bib.csl
+---
+
+Throughout this semester, you've been exposed to a ton of basic economic principles, and during  the second half of the course, we started connecting these principles to real life issues like market failures, climate change, discrimination and systemic racism, and inequality. The readings for these later topics mentioned some great work done by economists, political scientists, and legal scholars. Because of time constraints, we only scratched the surface of this work.
+
+If you're interested in getting up to 40 points of extra credit (equivalent to one problem set), you can do the following:
+
+1. Choose a book about the application of economics to a public policy issue (see the list below or check with me for approval)
+2. Read it. *You need to read it now*—if you read it months ago, it doesn't count. It has to be something new you haven't read yet.
+3. Write a 500-word review of the book. This shouldn't just be a summary—it should be a synthesis of what you read, with connections to principles we learned in class, ongoing debates in society, and your own interests and experiences.
+
+Submit the review through iCollege by 11:59 PM on Saturday, December 7. I will grade it using a check system.
+
+## Possible books
+
+Here are some books you can read:
+
+- Anand Giridharadas, *Winners Take All: The Elite Charade of Changing the World* 
+- Mehrsa Baradaran, *How the Other Half Banks: Exclusion, Exploitation, and the Threat to Democracy*
+- Mehrsa Baradaran, *The Color of Money: Black Banks and the Racial Wealth Gap*
+- Richard Rothstein, *The Color of Law: A Forgotten History of How Our Government Segregated America*
+- Any of the 100+ books on Nick Huntington-Klein's ["Good Books for Economists" list at Goodreads](https://www.goodreads.com/review/list/19131383?shelf=good-books-for-economists). 
+
+If you are interested in reading something else, e-mail me to check if it's okay.
