@@ -92,6 +92,7 @@ lessons:
   - title: "Governments and institutions"
     date: "November 7"
     reading: "11-reading"
+    class: "11-class"
 
   - title: '<i class="fas fa-laptop-code"></i> **Problem set 8**'
     date: "November 9 (S)"
