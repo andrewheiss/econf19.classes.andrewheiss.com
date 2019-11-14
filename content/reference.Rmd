@@ -382,6 +382,8 @@ source(here("lib", "graphics.R"))
 - …how Pigouvian taxes can fix externalities (and when they can't)
 - …how regulation can fix externalities (and when and why it can't)^[Remember the peanut butter regulation story—regulation is never strictly economic or mathematical]
 - …why not everything should be a market
+- …why large groups suffer from free riding and how they work to behave like small groups
+- …how small factions threaten democracy, but also how they enable it
 - …how voting can suffer from failures (Condorcet's paradox)
 - …the difference between income and assets
 - …why shared national identity and strong horizontal networks of institutions are important for a country's social and economic wellbeing
