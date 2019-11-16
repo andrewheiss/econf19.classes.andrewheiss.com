@@ -1,0 +1,43 @@
+---
+title: "When government go wrong + institutional alternatives"
+date: "2019-11-14"
+citeproc: false
+bibliography: ../../static/bib/references.bib
+csl: ../../static/bib/chicago-syllabus-no-bib.csl
+output:
+  blogdown::html_page:
+    template: ../../pandoc/toc-title_html.template
+    toc: true
+editor_options: 
+  chunk_output_type: console
+---
+
+# Slides
+
+[Download the slides from today's class](/slides/PMAP-8141_2019-11-14.pdf).
+
+<figure>
+[![First slide](/images/slides/slides_2019-11-14.png)](/slides/PMAP-8141_2019-11-14.pdf)
+</figure>
+
+
+# Links to stuff mentioned in class
+
+- [Paul Reeve, *Religion of a Different Color: Race and the Mormon Struggle for Whiteness*](https://www.amazon.com/Religion-Different-Color-Struggle-Whiteness/dp/0199754071): Historical study of how Mormons were considered nonwhite throughout the 1800s and early 1900s
+- [Anthony Abraham Jack, *The Privileged Poor: How Elite Colleges Are Failing Disadvantaged Students*](https://www.amazon.com/Privileged-Poor-Colleges-Disadvantaged-Students/dp/0674976894/): In-depth sociological study of how elite colleges forget to look at the assets of their students and instead only consider the income side of financial assistance. He has [a short version of his argument in the New York Times](https://www.nytimes.com/2015/09/13/opinion/sunday/what-the-privileged-poor-can-teach-us.html).
+- [The Parable of the Polygons](https://ncase.me/polygons/): An interactive simulation of how individual preferences can cause entire societies to be segregated
+- [Atlanta redlining map](https://dsl.richmond.edu/panorama/redlining/#loc=15/33.755/-84.397&maps=0&city=atlanta-ga): Overlay FHA maps of redlined areas onto modern Atlanta
+- [The Atlanta airport and College Park](https://atlmaps.org/layers/atlpm0380): You can overlay the plans for the 1967 expansion of ATL on top of existing Colelge Park homes
+- [The University of Virginia's Racial Dot Map](https://demographics.virginia.edu/DotMap/index.html): Map showing the current distribution of the US population by race. Zoom in on Atlanta to see the lasting legacy of segregation and white flight.
+- [Hasan Minhaj on Utah's (now dead) policy of housing the homeless](http://www.cc.com/shows/the-daily-show-with-jon-stewart/cast/cd00ef65-8df8-407b-8438-2b23cb64a582/lntv3q/the-homeless-homed)
+
+
+# Clearest and muddiest things
+
+Go to [this form](https://forms.gle/rwiMXtySjxgnqRDD9) and answer these three questions:
+
+1. What was the muddiest thing from class today? What are you still wondering about?
+2. What was the clearest thing from class today? 
+3. What was the most exciting thing you learned?
+
+I'll compile the questions and send out answers after class.
